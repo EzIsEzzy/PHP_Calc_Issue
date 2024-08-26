@@ -1,0 +1,95 @@
+* {
+    box-sizing: content-box;
+}
+
+.container {
+    border: 5px solid rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 96vh;
+    padding: 10px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+}
+
+.calc_border {
+    border: 2px solid rgb(158, 158, 158);
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    border-radius: 5px;
+    height: 500px;
+    width: 300px;
+}
+
+.screen {
+    background-color: white;
+    border-radius: 3px;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65%;
+    padding: 3px;
+}
+
+.button {
+    width: 57.5px;
+    height: 57.5px;
+    font-size: 25px;
+    border: 0px;
+    margin: 3px 5px 0px 0px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: rgb(158, 158, 158);
+}
+
+.opbutton {
+    width: 57.5px;
+    height: 57.5px;
+    font-size: 25px;
+    border: 0px;
+    margin: 3px 5px 0px 0px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(214, 214, 214);
+}
+
+.opbutton:hover {
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+.opbutton:active {
+    background-color: rgb(78, 78, 78);
+}
+
+.content {
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0px 0px 5px 5px;
+    font-size: 45px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+
+.content:disabled {
+    opacity: 1;
+    color: black;
+}
